@@ -1,0 +1,6 @@
+version: '3'
+services:
+  gptbot:
+    image: wechat-gptbot
+    volumes:
+      - /docker/gptbot/config/data:/code/config/data

@@ -44,9 +44,9 @@ func (c *Config) IsValid() bool {
 
 func InitConfig() {
 	// 1. 读取 `config.json`
-	data, err := os.ReadFile("./config/config.json")
+	data, err := os.ReadFile("./config/data/config.json")
 	if err != nil {
-		log.Fatalf("读取配置文件失败，请检查配置文件 `/config/config.json` 的配置, 错误信息: %+v\n", err)
+		log.Fatalf("读取配置文件失败，请检查配置文件 `/config/data/config.json` 的配置, 错误信息: %+v\n", err)
 	}
 	config := Config{}
 	if err = json.Unmarshal(data, &config); err != nil {
@@ -57,7 +57,7 @@ func InitConfig() {
 	}
 	C = &config
 	// 2. 读取 prompt.txt
-	prompt, err := os.ReadFile("./config/prompt.conf")
+	prompt, err := os.ReadFile("./config/data/prompt.conf")
 	if err != nil {
 		log.Fatalf("读取配置文件失败，请检查配置文件 `prompt.txt` 的配置, 错误信息: %+v\n", err)
 	}

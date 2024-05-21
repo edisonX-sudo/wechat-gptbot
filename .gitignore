@@ -338,6 +338,6 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 .idea
-config/config.json
-config/prompt.conf
-token.json
+config/**/config.json
+config/**/prompt.conf
+config/**/token.json
