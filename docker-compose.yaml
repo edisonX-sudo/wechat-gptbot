@@ -3,4 +3,4 @@ services:
   gptbot:
     image: wechat-gptbot:latest
     volumes:
-      - /docker/gptbot/config/data:/code/config/data
+      - /volume1/docker/gptbot/config/data:/code/config/data
