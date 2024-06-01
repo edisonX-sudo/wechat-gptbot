@@ -2,5 +2,6 @@ version: '3'
 services:
   gptbot:
     image: wechat-gptbot:latest
+    restart: always
     volumes:
       - /volume1/docker/gptbot/config/data:/code/config/data
